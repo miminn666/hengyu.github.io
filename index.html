@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>恒宇｜个人简介</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;
+  color:#fff;
+  background:#050711;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(94,74,255,.22),transparent 30%),
+    radial-gradient(circle at 80% 70%,rgba(0,210,255,.15),transparent 30%);
+  pointer-events:none;
+}
+
+.container{
+  width:min(920px,92%);
+  margin:auto;
+  padding:55px 0;
+}
+
+.card{
+  position:relative;
+  background:rgba(14,18,35,.82);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:28px;
+  padding:38px;
+  margin-bottom:22px;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+  backdrop-filter:blur(16px);
+}
+
+.hero{
+  text-align:center;
+  padding:55px 30px;
+  overflow:hidden;
+}
+
+.avatar{
+  width:110px;
+  height:110px;
+  margin:auto;
+  border-radius:50%;
+  background:linear-gradient(135deg,#6d5cff,#00c8ff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+  font-weight:800;
+  box-shadow:0 0 45px rgba(90,120,255,.4);
+  border:4px solid rgba(255,255,255,.12);
+}
+
+h1{
+  font-size:46px;
+  margin-top:22px;
+  letter-spacing:3px;
+}
+
+.subtitle{
+  margin-top:12px;
+  color:#9ca6bd;
+  font-size:16px;
+}
+
+.tag{
+  display:inline-block;
+  margin-top:22px;
+  padding:9px 18px;
+  border-radius:30px;
+  background:rgba(100,90,255,.15);
+  border:1px solid rgba(120,110,255,.35);
+  color:#b9b4ff;
+}
+
+.section-title{
+  font-size:25px;
+  margin-bottom:20px;
+}
+
+.text{
+  color:#aeb7c9;
+  line-height:1.9;
+  font-size:16px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.item{
+  padding:22px;
+  border-radius:18px;
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.07);
+}
+
+.item strong{
+  display:block;
+  font-size:24px;
+  margin-bottom:8px;
+}
+
+.item span{
+  color:#8993a8;
+  font-size:14px;
+}
+
+.badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.badge{
+  padding:10px 15px;
+  border-radius:12px;
+  background:#171d31;
+  border:1px solid #29314a;
+  color:#c8d0e0;
+}
+
+.footer{
+  text-align:center;
+  color:#667087;
+  font-size:13px;
+  padding:20px;
+}
+
+@media(max-width:650px){
+  .container{
+    padding:25px 0;
+  }
+
+  .card{
+    padding:25px 20px;
+    border-radius:22px;
+  }
+
+  h1{
+    font-size:36px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <section class="card hero">
+    <div class="avatar">恒</div>
+
+    <h1>恒宇</h1>
+
+    <p class="subtitle">
+      游戏账号领域 · 资源整合 · 账号回收
+    </p>
+
+    <div class="tag">
+      超自然行动组 · 玩家资源服务
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">关于我</h2>
+
+    <p class="text">
+      专注于游戏账号相关资源整合与交易信息服务，
+      长期关注《超自然行动组》玩家生态。
+      致力于建立更加清晰、便捷的账号资源交流渠道。
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">业务方向</h2>
+
+    <div class="grid">
+      <div class="item">
+        <strong>林门</strong>
+        <span>1W押金管</span>
+      </div>
+
+      <div class="item">
+        <strong>汤臣</strong>
+        <span>5000押金管</span>
+      </div>
+
+      <div class="item">
+        <strong>账号</strong>
+        <span>回收 · 评估 · 资源对接</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">个人标签</h2>
+
+    <div class="badges">
+      <div class="badge">超自然行动组</div>
+      <div class="badge">账号回收</div>
+      <div class="badge">资源整合</div>
+      <div class="badge">玩家交流</div>
+      <div class="badge">长期合作</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="section-title">温馨提示</h2>
+
+    <p class="text">
+      本页面为个人信息展示页面，不代表任何游戏官方、
+      游戏厂商或其他官方机构。
+      账号交易及相关操作请自行核实信息并注意资金安全。
+    </p>
+  </section>
+
+  <div class="footer">
+    © 2026 恒宇 · Personal Profile
+  </div>
+
+</div>
+
+</body>
+</html>
